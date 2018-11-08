@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+}
+
+footer {
+    padding: 20px;
+    font-size:  25px;
+}
+
+footer a:link, footer a:visited {
+    color: #91DFC8;
+}
+
+footer a:hover, footer a:active {
+    color: #F8F9FA;
+}
+
+/* ---------------------- BG Animation ---------------------- */
+#moveBod, .circle {
+    background: linear-gradient(-45deg, #1D1D56 15%, #374E5F, #16183A 85%);
+    background-size: 450% 100%;
+    -webkit-animation: Gradient 15s linear infinite;
+    -moz-animation: Gradient 15s linear infinite;
+    animation: Gradient 15s linear infinite;
+}
+
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+/* ------------------ header macbook animation ----------------- */
+.img-container {
+    position: relative;
+}
+
+.projImg {
+    width: 100%;
+}
+
+.macBook {
+    width: 100%;
+    position: absolute;
+    height: auto;
+    top: 0;
+}
+
+/* -------------------------- Navbar --------------------------- */
+nav a:link:not(#home), nav a:visited:not(#home) {
+    color: #8FDBC5 !important;
+}
+
+.hidden {
+    display: none;
+}
+
+#navi {
+    background: linear-gradient(to right, #17183A 10%, #91DFC8 50%, #17183A 90%);
+}
+
+/* --------------------------- 3 Icons ------------------------ */
+.icon {
+    color: #0b2e13;
+    font-size:95px;
+    padding: 70px;
+}
+
+#bulb {
+    background: url(../img/light-splat.png) center center no-repeat;
+    background-size: contain;
+}
+
+#mobile {
+    background: url(../img/mobile-splat.png) center center no-repeat;
+    background-size: contain;
+}
+
+#learn {
+    background: url(../img/learn-splat.png) center center no-repeat;
+    background-size: contain;
+}
+
+/* --------------------- iMac project slides ------------------- */
+div.macScreen {
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 67.5%;
+    height: 0;
+}
+
+div.macScreen img {
+    box-sizing: border-box;
+    background: url(../img/imac.png) center center no-repeat;
+    background-size: contain;
+    padding: 3% 11% 23.2%;/* 3.4% 10.8% 18.6% */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slide-info {
+    display: none;
+}
+
+#projDesc {
+    height: 105%;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 25px;
+}
+
+#nextBtn {
+    font-size: 60px;
+    cursor: pointer;
+}
+
+#nextBtn:hover {
+    color: #5A8687;
+}
+
+#projDesc p {
+    font-size: large;
+}
+
+@media screen and (max-width: 992px) {
+    #projDesc {
+        margin-top: 25px;
+        padding: 0;
+    }
+
+    #projDesc br {
+        display: none;
+    }
+}
+
+/* ------------------- Timeline -------------------- */
+#timeline a:link, #timeline a:visited {
+    color: #f8f9fa;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#timeline a:hover, #timeline a:active {
+    color: #91DFC8;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#timeline li {
+    padding: 30px 0;
+    position: relative;
+}
+
+#timeline {
+    color: #f8f9fa;
+    left: 30%;
+    margin: 0 auto;
+
+
+    border-left: 10px solid #ECEDF0;
+    position: relative;
+}
+
+.timeline-date {
+    position: absolute;
+    margin-top: -15px;
+    top: 50%;
+    left: -110px;
+}
+
+.circle{
+    margin-top: -25px;
+    top: 50%;
+    left: -28px;
+
+    width: 45px;
+    height: 45px;
+    border: 8px solid #ECEDF0;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    z-index: 10;
+}
+
+.timeline-list{
+    width: 50%;
+}
+
+.card {
+    background: rgba(242, 242, 242, 0.2);
+    -webkit-box-shadow: 7px 7px 15px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 7px 15px 1px rgba(0,0,0,0.75);
+    box-shadow: 7px 7px 15px 1px rgba(0,0,0,0.75);
+}
+
+/* -------------------------------- Contact ---------------------------------*/
+.social-links a:hover {
+    text-decoration: none;
+}
+
+/*.fa-envelope, a[href*="mailto"]:hover {*/
+    /*color:#D54A3E !important;*/
+/*}*/
+
+.fa-github, a[href*="github"]:hover {
+    color:#861C93 !important;
+}
+
+.fa-linkedin, a[href*="linkedin"]:hover {
+    color:#0077B5 !important;
+}
+
+#contactSection, #projectSection{
+    padding: 64px 32px;
+    background: url(../img/canvas1.png) center top no-repeat;
+    background-size: cover;
+}
+
+.prof-img {
+    max-width:80%;
+    max-height:600px;
+    left:10%;
+    position: relative;
+}
+
+.social-links {
+    position: relative;
+    top: 20%;
+    right: 15%;
+
+    /*padding: 60px 0 60px 100px;*/
+    padding: 8% 0 8% 14%;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-image: url(../img/grey-streak.png);
+    background-size: 100% 100%;
+}
+
+.social-links i {
+    font-size: 30px;
+}
+
+.resume-container {
+    top:-27px;
+    right:-67px;
+    position: absolute;
+    box-shadow: 0px 0px 35px 5px rgba(0,0,0,0.75);
+}
+
+.resume-img {
+    max-height: 400px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #0077B5;
+}
+
+.resume-container:hover .overlay {
+    opacity: 0.9;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1200px) {
+
+    .social-links {
+        padding: 7% 0 7% 10%;
+        right: 16%;
+        top: 22%;
+    }
+
+    .social-links i, h4 {
+        font-size: 20px;
+    }
+
+    .resume-img {
+        max-height:300px;
+    }
+
+    .resume-container {
+        top:-40px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .prof-img {
+        left: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .social-links {
+        text-align: center;
+        padding: 8% 6%;
+        right: 1%;
+        top: -3%;
+    }
+
+    .resume-container {
+        display: none;
+    }
+
+    #h4resume {
+        display: block;
+    }
+}
