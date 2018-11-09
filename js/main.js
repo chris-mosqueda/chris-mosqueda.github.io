@@ -5,7 +5,7 @@ $(function () {
         $(".macBook").each(function(i) {
             $(this).delay(i * 400).fadeIn(800);
         });
-        $(".macBook:not(:last)").delay(500).fadeOut();
+        $(".macBook:not(:last)").delay(600).fadeOut();
 
         // $("#mac2").delay(150).fadeIn("slow");
         // $("#mactext1").delay(2250).fadeIn("slow");
